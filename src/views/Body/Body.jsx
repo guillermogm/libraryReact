@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import { Login } from '../../components/Login/Login'
 import { Home } from '../Home/Home'
 import { NotFound } from '../NotFound/NotFound'
+import { Register } from '../../components/Register/Register'
 
 export const Body = () => {
   return (
@@ -10,6 +11,7 @@ export const Body = () => {
     <Routes>
         <Route path='*' element={<NotFound/>}/>
         <Route path="/login" element={<Login />}/>
+        <Route path="/register" element={<Register />}/>
         <Route path="/" element={<Home/>}/>
     </Routes>
     </>
