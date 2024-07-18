@@ -4,6 +4,7 @@ import { Login } from '../../components/Login/Login'
 import { Home } from '../Home/Home'
 import { NotFound } from '../NotFound/NotFound'
 import { Register } from '../../components/Register/Register'
+import { Services } from '../Services/Services'
 
 export const Body = () => {
   return (
@@ -12,6 +13,7 @@ export const Body = () => {
         <Route path='*' element={<NotFound/>}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/register" element={<Register />}/>
+        <Route path="/services" element={<Services />} />
         <Route path="/" element={<Home/>}/>
     </Routes>
     </>
