@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { Login } from './components/Login/Login.jsx'
+import { Cinput } from './components/Cinput/Cinput.jsx'
 
 function App() {
   // OPTION 1
@@ -28,6 +29,9 @@ function App() {
   return (
     <>
       <Login />
+      {/* <Cinput type="email" name="email" placeholder="Email"/>
+      <Cinput type="button" />
+      <Cinput type="checkBox"/> */}
     </>
   )
 }
