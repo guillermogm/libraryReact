@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Cinput } from '../Cinput/Cinput'
 
-export const Register = () => {
+export const CRegister = () => {
     const [credentials, setCredentials] = useState(
         {
           email:"",

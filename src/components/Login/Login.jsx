@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Cinput } from '../Cinput/Cinput'
 
-export const Login = () => {
+export const CLogin = () => {
     const [credentials, setCredentials] = useState(
         {
           email:"",
