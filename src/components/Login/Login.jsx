@@ -31,12 +31,12 @@ export const CLogin = () => {
       <div>
         {/* <label htmlFor="email">Email</label> */}
         {/* <input type="email" name="email" placeholder="Email" onChange={handleChange}></input> */}
-        <Cinput type="email" name="email" placeholder="Email" emitFuntion={handleChange}/>
+        <Cinput type="email" name="email" placeholder="Email" emitFunction={handleChange}/>
       </div>
       <div>
         {/* <label htmlFor="password">Password</label> */}
         {/* <input type="password" name="password" placeholder="Password" onChange={handleChange}></input> */}
-        <Cinput type="password" name="password" placeholder="Password" emitFuntion={handleChange}/>
+        <Cinput type="password" name="password" placeholder="Password" emitFunction={handleChange}/>
       </div>
       <div>
         <input type="button" name="send" value="Login" onClick={login}></input>
