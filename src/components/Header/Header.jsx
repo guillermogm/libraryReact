@@ -10,6 +10,7 @@ export const Header = () => {
       <CSurfer path="/login" content="Login" />
       <CSurfer path="/register" content="Register" />
       <CSurfer path="/authors" content="Authors" />
+      <CSurfer path="/books" content="Books" />
     </>
   )
 }
