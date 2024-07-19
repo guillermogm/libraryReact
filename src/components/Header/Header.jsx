@@ -1,9 +1,8 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+
 import { CSurfer } from '../CSurfer/CSurfer'
 
 export const Header = () => {
-  const navigate = useNavigate()
 
   return (
     <>
