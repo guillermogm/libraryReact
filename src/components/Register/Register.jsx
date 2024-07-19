@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Cinput } from '../Cinput/Cinput'
+import { registerUser } from '../../Services/apiCalls'
 
 export const CRegister = () => {
   const [credentials, setCredentials] = useState(
@@ -21,23 +22,10 @@ export const CRegister = () => {
 
   const register = async () => {
     try {
-      console.log(credentials)
-      // validar la data voy a enviar
-      if (credentials.email === "" || credentials.password === "") {
-        return console.log("No Email or Password");
-      }
-      // consumir la api
-      const request = await fetch("http://localhost:4000/api/auth/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(credentials),
-      });
-  
-      const result = await request.json();
-  
-      console.log(result);   
+
+      const response = await registerUser(credentials)
+      console.log(response);
+
     } catch (error) {
       console.log(error);
     }
