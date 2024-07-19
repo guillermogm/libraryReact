@@ -4,7 +4,7 @@ import { registerUser } from '../../Services/apiCalls'
 import { useNavigate } from 'react-router-dom'
 
 export const CRegister = () => {
-  const navigate= useNavigate()
+  const navigate = useNavigate()
   const [credentials, setCredentials] = useState(
     {
       email: "",
@@ -25,9 +25,12 @@ export const CRegister = () => {
     try {
 
       const response = await registerUser(credentials)
-      if(response.success){
+      if (response.success) {
         navigate("/login")
+      } else {
+        //Devolver el error en response.message
       }
+
       console.log(response);
 
     } catch (error) {
